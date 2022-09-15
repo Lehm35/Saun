@@ -131,14 +131,14 @@ i{
 
 /* Navigation */
 
- /* .menu-toggle-icon{
+.menu-toggle-icon{
   width: 3.5rem;
   height: 3.5rem;
   background-color: var(--accent-clr);
   cursor: pointer;
   transition: color .25s;
   color: var(--light-clr);
-}  */
+}
 
 .menu-toggle-icon{
   display: none;
@@ -230,8 +230,8 @@ section{
   justify-content: space-between;
   height: 400px;
   margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 24%;
+  margin-right: 10rem;
+  margin-top: 55rem;
   padding-bottom: 50rem;
 }
 
@@ -315,4 +315,64 @@ section{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #15db7b5b;
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 1800px) {
+
+  .meist-section{
+    margin-bottom: 3rem;
+  }
+
+  .meist-section img{
+    width: 600px;
+  }
+
+  .meist-description{
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+
+  .meist-section{
+    margin-bottom: 3rem;
+  }
+
+  .meist-section img{
+    width: 500px;
+  }
+
+  .meist-description{
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img{
+    display: none;
+  }
+
+  .list{
+    display: none;
+  }
+
+  .menu-toggle-icon{
+    display: inline-block;
+  }
+
+  .menu-close-icon{
+    display: none;
+  }
+
+  .meist-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meist-title{
+    font-size: 40px;
+    color: black;
+  }
 }
