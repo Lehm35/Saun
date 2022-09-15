@@ -138,6 +138,13 @@ i{
   cursor: pointer;
   transition: color .25s;
   color: var(--light-clr);
+  position: relative;
+}
+
+.menu-open-icon{
+  position: absolute;
+  top: 10%;
+  left: 20%;
 }
 
 .menu-toggle-icon{
@@ -219,6 +226,14 @@ section{
   height: 100vh;
   background: var(--dark-clr);
   z-index: -1;
+}
+
+.ehitamine-btn{
+  position: absolute;
+}
+
+.hero-bottons{
+  display: none;
 }
 
 /* Meist section */
@@ -347,6 +362,10 @@ section{
   .meist-description{
     max-width: 500px;
   }
+
+  .headline{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -369,10 +388,113 @@ section{
   .meist-section{
     display: flex;
     flex-direction: column;
+    align-items: start;
+    margin-top: 20rem;
+    margin-bottom: -5rem;
   }
 
   .meist-title{
+    margin-bottom: 3rem;
+    margin-left: 0;
     font-size: 40px;
     color: black;
+  }
+
+  .meist-description{
+    font-size: 20px;
+  }
+
+  .hero::after{
+    display: none;
+  }
+
+  .footer{
+    height: 200px;
+  }
+
+  .footer-text{
+    font-size: 14px;
+  }
+
+  .foot{
+    margin-left: 1rem;
+  }
+
+  .copyright{
+    font-size: 14px;
+    margin-left: 1rem;
+  }
+
+  .footer-seperator{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .headline{
+    top: 30rem;
+    width: 90%;
+  }
+  
+}
+
+@media only screen and (max-width: 400px){
+  
+  .headline{
+    font-size: 40px;
+    top: 30%;
+    left: 18%;
+  }
+
+  .hero-bottons{
+    display: block;
+    position: absolute;
+    left: 10%;
+  }
+
+  .ehitamine-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-clr);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: .7rem 2rem;
+    font-size: 20px;
+  }
+
+  .voi{
+    position: absolute;
+    top: .9rem;
+    left: 13rem;
+    color: white;
+    font-size: 18px;
+  }
+
+  .rohkem-infot-btn{
+    position: absolute;
+    color: var(--accent-clr);
+    left: 16rem;
+    top: .9rem;
+    text-decoration: underline;
+    min-width: 100px;
+    font-size: 18px;
+  }
+
+  .meist-section{
+    margin-top: -2rem;
+    margin-bottom: -4rem;
+  }
+
+  .slider{
+    height: 80%;
+  }
+
+  .footer-text{
+    font-size: 12px;
+  }
+
+  .copyright{
+    font-size: 12px;
   }
 }
