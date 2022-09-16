@@ -11,29 +11,32 @@
   </head>
   <body>
     
-    <header>
-      <nav class="nav">
+    <header class="header" id="header">
+      <nav class="nav container" id="nav">
         <a href="./index.html"><h1 class="logo" id="logo">Indiaanlasesaun</h1></a>
         <div>
-          <ul class="list">
-              <li class="list-item">
-                  <a href="#" class="list-link accent">Esileht</a>
-              </li>
-              <li class="list-item">
-                  <a href="#" class="list-link">Ehitamine</a>
-              </li>
-              <li class="list-item">
-                  <a href="#meist" class="list-link">Meist</a>
-              </li>
-              <li class="list-item">
-                  <a href="#" class="list-link">Galerii</a>
-              </li>
-          </ul>
+          <div class="nav_overlay"></div>
+          <div class="nav-mobile">
+            <ul class="list">
+                <li class="list-item">
+                    <a href="#" class="list-link accent">Esileht</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link current">Ehitamine</a>
+                </li>
+                <li class="list-item">
+                    <a href="#meist" class="list-link">Meist</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link">Galerii</a>
+                </li>
+            </ul>
+          </div>
         </div>
 
         <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
-          <i class="ri-menu-3-line menu-open-icon"></i>
-          <i class="ri-close-fill menu-close-icon"></i>
+          <i data-toggle="open" class="ri-menu-3-line menu-open-icon"></i>
+          <i data-toggle="close" class="ri-close-fill menu-close-icon"></i>
         </div>
 
       </nav>

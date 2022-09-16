@@ -79,6 +79,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ----------------- */
+body.scroll-false{
+  overflow-y: hidden;
+}
 
 html{
   font-size:62.5%;
@@ -149,6 +152,7 @@ i{
 
 .menu-toggle-icon{
   display: none;
+  z-index: 999;
 }
 
 .list{
@@ -434,13 +438,69 @@ section{
     top: 30rem;
     width: 90%;
   }
+
+  .nav_overlay{
+    position: fixed;
+    z-index: 4;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s, visibility .25s;
+  }
+  
+  .nav_overlay.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 19rem;
+    min-width: 35%;
+    background-color: white;
+    padding: 5.4rem 1.8rem;
+    transform: translateX(30rem); 
+    transition: transform .25s;
+    z-index: 5;
+  }
+  
+  .list{
+    text-transform: uppercase;
+    margin-left: -3rem;
+    margin-top: 5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+  
+  .list-link{
+    color: var(--clr-white);
+    display: inline-block;
+    padding: .5rem;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color .25s;
+  }
+  
+  .list-link:hover{
+    color: var(--clr-accent);
+  }
+  
+  .nav-mobile.active{
+    transform: translateX(0);
+  }
   
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
   
   .headline{
-    font-size: 40px;
+    font-size: 42px;
     top: 30%;
     left: 18%;
   }
@@ -482,12 +542,12 @@ section{
   }
 
   .meist-section{
-    margin-top: -1rem;
+    margin-top: 2rem;
     margin-bottom: -8rem;
   }
 
   .slider{
-    height: 80%;
+    height: 82%;
   }
 
   .footer-text{
@@ -497,4 +557,5 @@ section{
   .copyright{
     font-size: 12px;
   }
+
 }
