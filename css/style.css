@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+:root{
+  --light-clr: #fff;
+  --dark-clr: #121212;
+  --accent-clr: #15DB7C;
+
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3.6rem;
+  --font-family: 'Oswald', sans-serif;
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  
+  --margin-sm: 1rem;
+  --margin-md: 2rem;
+  --margin-lg: 3rem;
+
+  --section-spacing: 8rem;
+
+  --gap-sm: 1.5rem;
+  --gap-md: 4rem;
+  --gap-lg: 7rem;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* ----------------- */
+body.scroll-false{
+  overflow-y: hidden;
+}
+
+html{
+  font-size:62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: black;
+  overflow-x: hidden;
+}
+
+a{
+  color: var(--light-clr);
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  display: block; 
+}
+
+i{
+  font-size: var(--margin-md)
+}
+
+/* reusable classes */
+.place-items-center{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.sm-screen-hidden{
+  display: none !important;
+}
+
+.d-grid{
+  display: grid;
+}
+
+.accent{
+  color: #15DB7C;
+}
+
+/* Navigation */
+
+.menu-toggle-icon{
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--accent-clr);
+  cursor: pointer;
+  transition: color .25s;
+  color: var(--light-clr);
+  position: relative;
+}
+
+.menu-open-icon{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.menu-toggle-icon{
+  display: none;
+  z-index: 999;
+}
+
+.list{
+  display: flex;
+  gap: var(--gap-lg);
+}
+
+.list-link{
+  font-size: 18px;
+  font-weight: var(--font-weight-normal);
+}
+
+.list-link:hover{
+  color: var(--accent-clr);
+  transition: color .5s;
+}
+
+.list-link:active{
+  color: #15b165;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+}
+
+.nav{
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
+  padding: 0 10%;
+}
+
+section{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero section */
+
+.hero{
+  height: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headline{
+  color: var(--light-clr);
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  font-size: 70px;
+  max-width: 600px;
+  transform: translate(-20%, -70%);
+  z-index: 3;
+}
+
+.hero::after{
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.2;
+}
+
+.slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--dark-clr);
+  z-index: -1;
+}
+
+.ehitamine-btn{
+  position: absolute;
+}
+
+.hero-bottons{
+  display: none;
+}
+
+/* Meist section */
+
+.meist-section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  margin-left: 10%;
+  margin-right: 10rem;
+  margin-top: 55rem;
+  padding-bottom: 50rem;
+}
+
+.meist-section img{
+  position: absolute;
+  width: 700px;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.meist-title{
+  font-size: 64px;
+  margin-left: 4rem;
+  z-index: 3;
+  color: white;
+}
+
+.meist-description{
+  max-width: 700px;
+  font-size: 24px;
+}
+
+/* Footer section */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: #666666;
+  background-color: #19191A;
+  height: 250px;
+  width: 100%;
+}
+
+.foot{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-text{
+  font-size: 18px;
+  max-width: 480px;
+  font-weight: var(--font-weight-normal);
+}
+
+.footer-seperator{
+  margin: 0 4rem;
+  margin-bottom: 2rem;
+  opacity: .2;
+}
+
+.copyright{
+  margin-left: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  opacity: .8;
+}
+
+::selection{
+  background-color: var(--accent-clr);
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(34, 34, 34);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(77, 77, 77)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #15db7b5b;
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 1800px) {
+
+  .meist-section{
+    margin-bottom: 3rem;
+  }
+
+  .meist-section img{
+    width: 600px;
+  }
+
+  .meist-description{
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+
+  .meist-section{
+    margin-bottom: 3rem;
+  }
+
+  .meist-section img{
+    width: 500px;
+  }
+
+  .meist-description{
+    max-width: 500px;
+  }
+
+  .headline{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img{
+    display: none;
+  }
+
+  .list{
+    display: none;
+  }
+
+  .menu-toggle-icon{
+    display: inline-block;
+  }
+
+  .menu-close-icon{
+    display: none;
+  }
+
+  .meist-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20rem;
+    margin-bottom: -5rem;
+  }
+
+  .meist-title{
+    margin-bottom: 3rem;
+    margin-left: 0;
+    font-size: 40px;
+    color: black;
+  }
+
+  .meist-description{
+    font-size: 20px;
+  }
+
+  .hero::after{
+    display: none;
+  }
+
+  .footer{
+    height: 200px;
+  }
+
+  .footer-text{
+    font-size: 14px;
+  }
+
+  .foot{
+    margin-left: 1rem;
+  }
+
+  .copyright{
+    font-size: 14px;
+    margin-left: 1rem;
+  }
+
+  .footer-seperator{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .headline{
+    top: 30rem;
+    width: 90%;
+  }
+
+  .nav_overlay{
+    position: fixed;
+    z-index: 4;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s, visibility .25s;
+  }
+  
+  .nav_overlay.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 19rem;
+    min-width: 35%;
+    background-color: white;
+    padding: 5.4rem 1.8rem;
+    transform: translateX(30rem); 
+    transition: transform .25s;
+    z-index: 5;
+  }
+  
+  .list{
+    text-transform: uppercase;
+    margin-left: -3rem;
+    margin-top: 5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+  
+  .list-link{
+    color: var(--clr-white);
+    display: inline-block;
+    padding: .5rem;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color .25s;
+  }
+  
+  .list-link:hover{
+    color: var(--clr-accent);
+  }
+  
+  .nav-mobile.active{
+    transform: translateX(0);
+  }
+  
+}
+
+@media only screen and (max-width: 550px){
+  
+  .headline{
+    font-size: 42px;
+    top: 30%;
+    left: 18%;
+  }
+
+  .hero-bottons{
+    display: block;
+    position: absolute;
+    left: 10%;
+  }
+
+  .ehitamine-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-clr);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: .7rem 2rem;
+    font-size: 20px;
+  }
+
+  .voi{
+    position: absolute;
+    top: .9rem;
+    left: 13rem;
+    color: white;
+    font-size: 18px;
+  }
+
+  .rohkem-infot-btn{
+    position: absolute;
+    color: var(--accent-clr);
+    left: 16rem;
+    top: .9rem;
+    text-decoration: underline;
+    min-width: 100px;
+    font-size: 18px;
+  }
+
+  .meist-section{
+    margin-top: 2rem;
+    margin-bottom: -8rem;
+  }
+
+  .slider{
+    height: 82%;
+  }
+
+  .footer-text{
+    font-size: 12px;
+  }
+
+  .copyright{
+    font-size: 12px;
+    margin-bottom: 4rem;
+  }
+
+}
