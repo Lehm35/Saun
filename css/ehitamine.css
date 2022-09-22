@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+:root{
+  --light-clr: #fff;
+  --dark-clr: #121212;
+  --accent-clr: #15DB7C;
+
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3.6rem;
+  --font-family: 'Oswald', sans-serif;
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  
+  --margin-sm: 1rem;
+  --margin-md: 2rem;
+  --margin-lg: 3rem;
+
+  --section-spacing: 8rem;
+
+  --gap-sm: 1.5rem;
+  --gap-md: 4rem;
+  --gap-lg: 7rem;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* ----------------- */
+body.scroll-false{
+  overflow-y: hidden;
+}
+
+html{
+  font-size:62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: black;
+  overflow-x: hidden;
+}
+
+a{
+  color: black ;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  display: block; 
+}
+
+i{
+  font-size: var(--margin-md)
+}
+
+/* reusable classes */
+.place-items-center{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.sm-screen-hidden{
+  display: none !important;
+}
+
+.d-grid{
+  display: grid;
+}
+
+.accent{
+  color: #15DB7C;
+}
+
+/* Navigation */
+
+.menu-toggle-icon{
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--accent-clr);
+  cursor: pointer;
+  transition: color .25s;
+  color: var(--light-clr);
+  position: relative;
+}
+
+.menu-open-icon{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.menu-toggle-icon{
+  display: none;
+  z-index: 999;
+}
+
+.list{
+  display: flex;
+  gap: var(--gap-lg);
+}
+
+.list-link{
+  font-size: 18px;
+  font-weight: var(--font-weight-normal);
+}
+
+.list-link:hover{
+  color: var(--accent-clr);
+  transition: color .5s;
+}
+
+.list-link:active{
+  color: #15b165;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+}
+
+.nav{
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
+  padding: 0 10%;
+}
+
+ /* Hero */
+
+ .hero{
+  margin-top: 13rem;
+  font-size: var(--font-size-md);
+ }
+
+ /* Tutorial section */

@@ -28,15 +28,15 @@ tl.fromTo(hero, 1, { height: "0%" }, { height: "80%", ease: Power2.easeInOut })
 
 const sr = ScrollReveal({
   distance: '25px',
-  duration: 2500
+  duration: 2000
 });
 
 sr.reveal(`.meist-title, .meist-img`, {
-  origin: 'left'
+  origin: 'bottom'
 })
 
 sr.reveal(`.meist-description`, {
-  origin: 'right'
+  origin: 'bottom'
 })
 
 sr.reveal(`.footer-text, .footer-description, hr, .copyright`, {

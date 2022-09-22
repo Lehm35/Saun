@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="./css/ehitamine.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kiirsaun | Ehitamine</title>
 </head>
 <body>
-  
+
+  <header class="header" id="header">
+    <nav class="nav container" id="nav">
+      <a href="./index.html"><h1 class="logo" id="logo">Kiirsaun</h1></a>
+      <div>
+        <div class="nav_overlay"></div>
+        <div class="nav-mobile">
+          <ul class="list">
+              <li class="list-item">
+                  <a href="#" class="list-link accent">Esileht</a>
+              </li>
+              <li class="list-item">
+                  <a href="ehitamine.html" class="list-link current">Ehitamine</a>
+              </li>
+              <li class="list-item">
+                  <a href="#" class="list-link">Galerii</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+        <i data-toggle="open" class="ri-menu-3-line menu-open-icon"></i>
+        <i data-toggle="close" class="ri-close-fill menu-close-icon"></i>
+      </div>
+    </nav>
+
+      <div class="hero place-items-center">
+        <h1 class="headline">Kiirsauna <span class="span">sauna</span> ehitamise juhend</h1>
+      </div>
+
+  </header>
+
+  <section class="tutorial-section">
+    <div class="timeline-line"></div>
+
+    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_85_33)">
+    <path d="M36.667 27.5L22.917 41.25V13.75L36.667 27.5Z" fill="#13C16E"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_85_33">
+    <rect width="55" height="55" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+
+    <img src="./img/meist-section-image.jpg" alt="" class="tutorial-img-1">
+
+    <h2 class="tutorial-headline">Tee seda!</h2>
+
+    <p class="tutorial-description">
+      Lorem ipsum dolor sit amet, 
+      consectetu adipiscing elit, sed do 
+      eiusmod tempor
+    </p>
+
+  </section>
+
 </body>
 </html>
