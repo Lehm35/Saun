@@ -1,0 +1,169 @@
+[
+  {
+    "name" : "eemaldasusi",
+    "images" : [
+      {
+          "src": "./images/eemaldasusi/susi.jpg",
+          "alt": "söe eemaldamine"
+        },
+        {
+          "src": "./images/eemaldasusi/susi2.jpg",
+          "alt": "söe eemaldamine"
+        },
+        {
+          "src": "./images/eemaldasusi/susi3.jpg",
+          "alt": "söe eemaldamine"
+        }
+    ]
+  },
+
+  {
+    "name" : "naudisauna",
+    "images" : [
+      {
+          "src": "./images/naudisauna/naudi.jpg",
+          "alt": "naudi sauna"
+        },
+        {
+          "src": "./images/naudisauna/naudi2.jpg",
+          "alt": "naudi sauna"
+        },
+        {
+          "src": "./images/naudisauna/naudi3.jpg",
+          "alt": "naudi sauna"
+        }
+    ]
+  },
+
+  {
+    "name" : "otsikive",
+    "images" : [
+      {
+          "src": "./images/otsikive/otsikive.jpg",
+          "alt": "Otsi kive"
+        },
+        {
+          "src": "./images/otsikive/otsikive2.jpg",
+          "alt": "Otsi kive"
+        },
+        {
+          "src": "./images/otsikive/otsikive3.jpg",
+          "alt": "Otsi kive"
+        },
+        {
+          "src": "./images/otsikive/otsikive4.jpg",
+          "alt": "Otsi kive"
+        }
+    ]
+  },
+
+  {
+    "name" : "otsiplats",
+    "images" : [
+        {
+          "src": "./images/otsiplats/otsiplats.jpg",
+          "alt": "Otsi plats"
+        },
+        {
+          "src": "./images/otsiplats/otsiplats2.jpg",
+          "alt": "Otsi plats"
+        },
+        {
+          "src": "./images/otsiplats/otsiplats3.jpg",
+          "alt": "Otsi plats"
+        }
+    ]
+  },
+  {
+    "name" : "otsipuid",
+    "images" : [
+        {
+          "src": "./images/otsipuid/otsipuid.jpg",
+          "alt": "Otsi puid"
+        },
+        {
+          "src": "./images/otsipuid/otsipuid2.jpg",
+          "alt": "Otsi puid"
+        },
+        {
+          "src": "./images/otsipuid/otsipuid3.jpg",
+          "alt": "Otsi puid"
+        }
+    ]
+  },
+  {
+    "name" : "panekile",
+    "images" : [
+        {
+          "src": "./images/panekile/panekile.jpg",
+          "alt": "Pane kile"
+        },
+        {
+          "src": "./images/panekile/panekile2.jpg",
+          "alt": "Pane kile"
+        },
+        {
+          "src": "./images/panekile/panekile3.jpg",
+          "alt": "Pane kile"
+        },
+        {
+          "src": "./images/panekile/panekile4.jpg",
+          "alt": "Pane kile"
+        },
+        {
+          "src": "./images/panekile/panekile5.jpg",
+          "alt": "Pane kile"
+        }
+    ]
+  },
+  {
+    "name" : "teeloke",
+    "images" : [
+        {
+          "src": "./images/teeloke/teeloke.jpg",
+          "alt": "Tee lõke"
+        },
+        {
+          "src": "./images/teeloke/teeloke2.jpg",
+          "alt": "Tee lõke"
+        },
+        {
+          "src": "./images/teeloke/teeloke3.jpg",
+          "alt": "Tee lõke"
+        },
+        {
+          "src": "./images/teeloke/teeloke4.jpg",
+          "alt": "Tee lõke"
+        },
+        {
+          "src": "./images/teeloke/teeloke5.jpg",
+          "alt": "Tee lõke"
+        },
+        {
+          "src": "./images/teeloke/teeloke6.jpg",
+          "alt": "Tee lõke"
+        }
+    ]
+  },
+  {
+    "name" : "teeraam",
+    "images" : [
+        {
+          "src": "./images/teeraam/raam.jpg",
+          "alt": "Tee raam"
+        },
+        {
+          "src": "./images/teeraam/raam2.jpg",
+          "alt": "Tee raam"
+        },
+        {
+          "src": "./images/teeraam/raam3.jpg",
+          "alt": "Tee raam"
+        },
+        {
+          "src": "./images/teeraam/raam4.jpg",
+          "alt": "Tee raam"
+        }
+    ]
+  }
+]
