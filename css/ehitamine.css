@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
 
 :root{
@@ -89,7 +90,6 @@ body.scroll-false{
 }
 
 html{
-  font-size:62.5%;
   scroll-behavior: smooth;
 }
 
@@ -131,6 +131,7 @@ i{
 
 .d-grid{
   display: grid;
+  grid-template-columns: repeat(2,50%);
 }
 
 .accent{
@@ -140,8 +141,8 @@ i{
 /* Navigation */
 
 .menu-toggle-icon{
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--accent-clr);
   cursor: pointer;
   transition: color .25s;
@@ -150,9 +151,10 @@ i{
 }
 
 .menu-open-icon{
+  font-size: 62.5%;
   position: absolute;
-  top: 10%;
-  left: 20%;
+  top: 12%;
+  left: 24%;
 }
 
 .menu-toggle-icon{
@@ -162,7 +164,7 @@ i{
 
 .list{
   display: flex;
-  gap: var(--gap-lg);
+  gap: var(--gap-md);
 }
 
 .list-link{
@@ -191,7 +193,7 @@ i{
 }
 
 .nav{
-  height: 10rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -201,22 +203,93 @@ i{
 
  /* Hero */
 
- .hero{
-  margin-top: 13rem;
-  font-size: var(--font-size-md);
- }
+.hero-headline{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 18rem;
+  font-size: 70px;
+}
+
+/* Images */
+
+.image-circle{
+  object-fit: cover;
+  clip-path: circle(40% at 50% 50%);
+  max-width: 50rem;
+}
 
  /* Tutorial section */
+.section{
+  margin-top: 37vh;
+  align-items: center;
+}
 
- .wrapper{
+.text{
+  color: #001A22;
+  margin-left: 25%;
+  max-width: 600px;
+}
+
+.step-num{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #B2C9D0;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 1rem;
+}
+
+.step-headline{
+  color: #023646;
+  font-family: 'Alkalami';
+  font-weight: 500;
+  font-size: 33px;
+  margin-bottom: .5rem;
+}
+
+.step-description{
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.rohkem-btn{
+  background-color: white;
+  color: #023646;
+  font-weight: 700;
+  font-size: 20px;
+  border-color: #023646;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 30px;
+  padding-bottom: .1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition: background-color .25s, color .25s;
+  transition-timing-function: ease-in-out;
+}
+
+.rohkem-btn:hover{
+  background-color: #023646;
+  color: white;
+}
+
+.rohkem-btn:active{
+  background-color: #0b4d61;
+  border-color: #0b4d61;
+}
+
+.wrapper{
+  height: 550rem;
   position: relative;
-  height: 850rem;
  }
 
 .timeline{
   position: absolute;
   top: 70vh;
-  left: 44%;
+  left: 43.7%;
 }
 
 header{
@@ -234,6 +307,7 @@ header{
   background-color: #19191A;
   height: 250px;
   width: 100%;
+  padding-top: 16rem;
 }
 
 .foot{
@@ -245,7 +319,7 @@ header{
 
 .footer-text{
   font-size: 18px;
-  max-width: 480px;
+  max-width: 680px;
   font-weight: var(--font-weight-normal);
 }
 
@@ -256,6 +330,7 @@ header{
 }
 
 .copyright{
+  font-size: 18px;  
   margin-left: 5rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
