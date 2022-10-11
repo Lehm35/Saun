@@ -216,13 +216,25 @@ i{
 .image-circle{
   object-fit: cover;
   clip-path: circle(40% at 50% 50%);
-  max-width: 50rem;
+  max-width: 52rem;
+}
+
+.huge-circle{
+  max-width: 40rem;
+  justify-content: flex-end;
+  margin-left: 10rem; 
 }
 
  /* Tutorial section */
-.section{
-  margin-top: 37vh;
+
+ .otsiplats{
+  margin-top: 10rem;
+ }
+
+section{
+  padding-top: 10rem;
   align-items: center;
+  text-align: left;
 }
 
 .text{
