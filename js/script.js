@@ -16,7 +16,7 @@ const sr = ScrollReveal({
   duration: 2000
 });
 
-sr.reveal(`section`, {
+sr.reveal(`.footer-text, .footer-description, hr, .copyright, section`, {
   origin: 'bottom'
 })
 
