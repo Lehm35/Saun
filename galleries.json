@@ -31,10 +31,6 @@
         {
           "src": "./images/naudisauna/naudi3.jpg",
           "alt": "naudi sauna"
-        },
-        {
-          "src": "./images/naudisauna/saunatemp.jpg",
-          "alt": "naudi sauna"
         }
     ]
   },
@@ -88,10 +84,6 @@
         {
           "src": "./images/otsipuid/otsipuid2.jpg",
           "alt": "Otsi puid"
-        },
-        {
-          "src": "./images/otsipuid/otsipuid3.jpg",
-          "alt": "Otsi puid"
         }
     ]
   },
@@ -137,14 +129,6 @@
         },
         {
           "src": "./images/teeloke/teeloke4.jpg",
-          "alt": "Tee lõke"
-        },
-        {
-          "src": "./images/teeloke/teeloke5.jpg",
-          "alt": "Tee lõke"
-        },
-        {
-          "src": "./images/teeloke/teeloke6.jpg",
           "alt": "Tee lõke"
         }
     ]
