@@ -205,10 +205,41 @@ i{
 
 .hero-headline{
   color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 18rem;
-  font-size: 70px;
+  margin-top: 30vh;
+  margin-left: 10vw;
+  max-width: 40rem;
+  font-size: 76px;
+}
+
+.wrapper{
+  height: 550rem;
+  position: relative;
+}
+
+.timeline{
+  position: absolute;
+  top: 70vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+header{
+  background-color: #001A22;
+  height: 100vh;
+}
+
+.hero-section{
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+}
+
+.hero-img{
+  grid-column-start: 2;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 100%, 0% 20%);
+  object-fit: cover;
+  margin-top: 12vh;
+  margin-left: 5vw;
+  max-width: 40vw;
 }
 
 /* Images */
@@ -227,9 +258,9 @@ i{
 
  /* Tutorial section */
 
- .otsiplats{
-  margin-top: 10rem;
- }
+.otsiplats{
+ margin-top: 10rem;
+}
 
 section{
   padding-top: 10rem;
@@ -291,22 +322,6 @@ section{
 .rohkem-btn:active{
   background-color: #0b4d61;
   border-color: #0b4d61;
-}
-
-.wrapper{
-  height: 550rem;
-  position: relative;
- }
-
-.timeline{
-  position: absolute;
-  top: 70vh;
-  left: 43.7%;
-}
-
-header{
-  background-color: #023646;
-  height: 100vh;
 }
 
 /* Footer section */
@@ -373,6 +388,7 @@ header{
 ::-webkit-scrollbar-thumb:hover {
   background: #15db7b5b;
 }
+
 
 /* Mobile view */
 

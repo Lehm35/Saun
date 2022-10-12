@@ -31,6 +31,10 @@
         {
           "src": "./images/naudisauna/naudi3.jpg",
           "alt": "naudi sauna"
+        },
+        {
+          "src": "./images/naudisauna/saunatemp.jpg",
+          "alt": "naudi sauna"
         }
     ]
   },
