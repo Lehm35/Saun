@@ -404,6 +404,28 @@ section{
 
 @media only screen and (max-width: 800px) {
 
+  .hero-img{
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin: 0 10vw;
+    max-width: 100vw;
+  }
+
+
+  .timeline{
+    display: none;
+  }
+
+  .hero-headline{
+    margin-top: 13rem;
+    font-size: 58px;
+    width: 85vw;
+  }
+
+  .hero-section{
+    width: 100vw;
+  }
+
   .list{
     display: none;
   }
@@ -458,10 +480,10 @@ section{
     top: 0;
     right: 0;
     bottom: 0;
-    width: 19rem;
+    width: 12rem;
     min-width: 35%;
     background-color: white;
-    padding: 5.4rem 1.8rem;
+    padding: 2rem 1.8rem;
     transform: translateX(30rem); 
     transition: transform .25s;
     z-index: 5;
@@ -474,9 +496,9 @@ section{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: .6rem;
+    gap: .3rem;
   }
-  
+
   .list-link{
     color: var(--clr-white);
     display: inline-block;
