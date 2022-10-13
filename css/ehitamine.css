@@ -207,12 +207,11 @@ i{
   color: white;
   margin-top: 30vh;
   margin-left: 10vw;
-  max-width: 40rem;
+  max-width: 70rem;
   font-size: 76px;
 }
 
 .wrapper{
-  height: 550rem;
   position: relative;
 }
 
@@ -244,38 +243,45 @@ i{
 
 /* Images */
 
-.image-circle{
+.image-circle-left{
+  justify-self: start;
+}
+
+.image-circle-left img{
+  border-radius: 100%;
+  height: 500px;
+  width: 500px;  
   object-fit: cover;
-  clip-path: circle(40% at 50% 50%);
-  max-width: 52rem;
 }
 
-.huge-circle{
-  max-width: 40rem;
-  justify-content: flex-end;
-  margin-left: 10rem; 
+.image-circle-right{
+  justify-self: end;
 }
 
-.kile-img{
-  margin-left: 5rem;
+.image-circle-right img{
+  border-radius: 100%;
+  height: 500px;
+  width: 500px;  
+  object-fit: cover;
 }
 
  /* Tutorial section */
-
-.otsiplats{
- margin-top: 10rem;
-}
 
 section{
   height: 100vh;
   align-items: center;
   text-align: left;
+  margin: 0 10vw;
+}
+
+.text-right{
+  justify-self: end;
+  max-width: 500px;
 }
 
 .text{
   color: #001A22;
-  margin-left: 25%;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .step-num{
@@ -490,7 +496,7 @@ section{
   
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 700px){
 
   .footer-text{
     font-size: 12px;
