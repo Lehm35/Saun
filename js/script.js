@@ -8,8 +8,7 @@ const headline = document.querySelector('.hero-headline');
 
 const tl = new TimelineMax();
 
-tl.fromTo(heroImage, 1, { height: "0%" }, { height: "80%", ease: Power2.easeInOut })
-.fromTo(headline, 1, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut});
+tl.fromTo(headline, 1, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut});
 
 const sr = ScrollReveal({
   distance: '25px',
