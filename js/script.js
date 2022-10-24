@@ -12,7 +12,7 @@ tl.fromTo(headline, 1, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut});
 
 const sr = ScrollReveal({
   distance: '25px',
-  duration: 2000
+  duration: 2300
 });
 
 sr.reveal(`.footer-text, .footer-description, hr, .copyright, section`, {
