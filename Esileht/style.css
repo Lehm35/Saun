@@ -252,6 +252,7 @@ section{
 /* Meist section */
 
 .meist-section{
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -266,15 +267,11 @@ section{
 
 .meist-title{
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 15%;
   font-size: 64px;
   z-index: 3;
   color: white;
-}
-
-.meist-img{
-  position: relative;
 }
 
 .meist-section img{
@@ -348,38 +345,12 @@ section{
 
 /* Mobile view */
 
-@media only screen and (max-width: 1800px) {
-
-  /* .meist-section{
-    margin-bottom: 3rem;
-  }
-
-  .meist-section img{
-    width: 600px;
-  }
-
-  .meist-description{
-    max-width: 600px;
-  } */
-}
-
 @media only screen and (max-width: 1500px) {
-
-  /* .meist-section{
-    margin-bottom: 3rem;
-  }
-
-  .meist-section img{
-    width: 500px;
-  }
-
-  .meist-description{
-    max-width: 500px;
-  } */
 
   .headline{
     width: 100%;
   }
+  
 }
 
 @media only screen and (max-width: 800px) {
