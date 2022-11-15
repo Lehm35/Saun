@@ -129,11 +129,6 @@ i{
   display: none !important;
 }
 
-.d-grid{
-  display: grid;
-  grid-template-columns: repeat(2,50%);
-}
-
 .accent{
   color: #15DB7C;
 }
@@ -205,20 +200,7 @@ i{
 
 .hero-headline{
   color: white;
-  max-width: 650px;
   font-size: 76px;
-}
-
-.wrapper{
-  position: relative;
-}
-
-.timeline{
-  position: absolute;
-  z-index: 0;
-  top: 100vh;
-  left: 50%;
-  transform: translate(-50%);
 }
 
 .header{
@@ -233,39 +215,14 @@ i{
   align-items: center;
   justify-content: center;
   gap: 150px;
-  padding: 5rem;
-  transform: translateY(10%);
+  padding: 10rem;
+  height: 80vh;
 }
 
 .hero-img{
   clip-path: polygon(20% 0%, 100% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 100%, 0% 20%);
-  max-width: 650px;
-}
-
-/* Images */
-
-.image-circle-left{
-  position: relative;
-  justify-self: start;
-}
-
-.image-circle-left img{
-  border-radius: 100%;
-  height: 550px;
-  width: 550px;  
-  object-fit: cover;
-}
-
-.image-circle-right{
-  position: relative;
-  justify-self: end;
-}
-
-.image-circle-right img{
-  border-radius: 100%;
-  height: 550px;
-  width: 550px;  
-  object-fit: cover;
+  width: 40vw;
+  max-width: 40rem;
 }
 
 /* Illustration */
@@ -302,24 +259,56 @@ i{
   width: 240px;
 }
 
+/* Images */
+
+.image-circle-left{
+  position: relative;
+  justify-self: start;
+}
+
+.image-circle-left img{
+  border-radius: 100%;
+  height: 550px;
+  width: 550px;  
+  object-fit: cover;
+}
+
+.image-circle-right{
+  position: relative;
+  justify-self: end;
+}
+
+.image-circle-right img{
+  border-radius: 100%;
+  height: 550px;
+  width: 550px;  
+  object-fit: cover;
+}
 
 /* Tutorial section */
 
-section{
-  height: 60rem;
-  align-items: center;
-  text-align: left;
-  margin: 0 10vw;
+.container{
+  position: relative;
 }
 
-.text-right{
-  justify-self: end;
-  max-width: 500px;
+.timeline{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25vw;
+  height: 60rem;
 }
 
 .text{
   color: #001A22;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .step-num{
@@ -446,9 +435,76 @@ section{
   .timeline{
     display: none;
   }
+
+  .hero-headline{
+    font-size: 64px;
+  }
+
+  .hero-section{
+    padding: 5rem;
+  }
+
+  .image-circle-left{
+    position: relative;
+    justify-self: start;
+  }
+  
+  .image-circle-left img{
+    border-radius: 100%;
+    height: 450px;
+    width: 450px;  
+    object-fit: cover;
+  }
+  
+  .image-circle-right{
+    position: relative;
+    justify-self: end;
+  }
+  
+  .image-circle-right img{
+    border-radius: 100%;
+    height: 450px;
+    width: 450px;  
+    object-fit: cover;
+  }
+
+  /* Illustration */
+
+  .red-illustration{
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: -40px;
+    width: 200px;
+  }
+
+  .blue-illustration{
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: -40px;
+    width: 200px;
+  }
+
+  .blue-illustration-right{
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    left: 310px;
+    width: 200px;
+  }
+
+  .red-illustration-right{
+    position: absolute;
+    z-index: -1;
+    top: 230px;
+    left: 310px;
+    width: 200px;
+  }
+
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1400px){
 
   .image-circle-left img{
     width: 400px;
@@ -459,23 +515,64 @@ section{
     width: 400px;
     height: 400px;
   }
+
+  .blue-illustration,
+  .blue-illustration-right,
+  .red-illustration,
+  .red-illustration-right{
+    display: none;
+  }
+
+  section{
+    gap: 10vw;
+    height: 50rem;
+  }
+
+  .hero-headline{
+    font-size: 60px;
+  }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
 
   .image-circle-left img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
 
   .image-circle-right img{
-    width: 300px;
-    height: 300px;
-  }  
+    width: 350px;
+    height: 350px;
+  }
 
+  .step-num{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1rem;
+  }
+
+  .step-headline{
+    font-size: 30px;
+    margin-bottom: 0.5;
+  }
+  .step-description{
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    max-width: 380px;
+  }
+
+  section{
+    height: 40rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+
+  section{
+    gap: 0;
+    height: 33rem;
+  }
 
   .hero-section{
     flex-direction: column;
@@ -504,16 +601,6 @@ section{
   
   .timeline{
     display: none;
-  }
-
-  .d-grid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  section {
-    height: 33rem;
   }
 
   .raam,
