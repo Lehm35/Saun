@@ -215,7 +215,7 @@ i{
 
 .timeline{
   position: absolute;
-  z-index: 9991;
+  z-index: 0;
   top: 100vh;
   left: 50%;
   transform: translate(-50%);
@@ -482,6 +482,7 @@ section{
     text-align: center;
     gap: 50px;
     align-items: center;
+    padding: 0;
   }
 
   .hero-img{
@@ -492,11 +493,11 @@ section{
 
   .hero-img img{
     border-radius: 6px;
-    height: 24rem;
+    height: 26rem;
     max-width: 90vw;
     object-fit: cover;
   }
-
+  
   .hero-headline{
     font-size: 42px;
   }
@@ -513,6 +514,11 @@ section{
 
   section {
     height: 33rem;
+  }
+
+  .raam,
+  .otsipalgid{
+    height: 45rem;
   }
 
   section img{
