@@ -215,7 +215,7 @@ i{
 
 .timeline{
   position: absolute;
-  z-index: 9991;
+  z-index: 0;
   top: 100vh;
   left: 50%;
   transform: translate(-50%);
