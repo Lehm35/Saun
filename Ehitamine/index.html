@@ -42,7 +42,7 @@
         </h1>      
 
         <div class="hero-img">
-          <img src="../images/1.jpg" alt="">
+          <img src="../images/otsiplats/otsiplats.jpg" id="image">
         </div>
       </div>
     </header>
@@ -366,5 +366,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
+  <script type="text/javascript">
+    let image = document.getElementById('image');
+    let images = ['../images/eemaldasusi/susi.jpg', '../images/naudisauna/naudi.jpg', '../images/otsikive/otsikive.jpg', '../images/otsiplats/otsiplats.jpg', '../images/otsipuid/otsipuid.jpg', '../images/panekile/panekile.jpg', '../images/teeloke/teeloke.jpg', '../images/teeraam/raam.jpg']
+    setInterval(function(){
+      let random = Math.floor(Math.random() * 8);
+      image.src = images[random];
+    }, 3000);
+  </script>
 </body>
 </html>
