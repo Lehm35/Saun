@@ -82,7 +82,6 @@ function updateGallery(galleryImages){
   moveGallery();
 }
 
-// event listeners
 function attachOpenGalleryEventListeners(){
   modalableImages.forEach((btn) => {
     btn.addEventListener('mouseenter', () => {
