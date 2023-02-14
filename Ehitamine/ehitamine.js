@@ -15,7 +15,7 @@ const tl = new TimelineMax();
 
 tl.fromTo(slider, 1, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut})
 .fromTo(nav, .8, {y: "-100%"}, {y: "0%", ease: Power2.easeInOut})
-.fromTo(headline, 1, {x: "-150%"}, {x: "0%", ease: Power2.easeInOut})
+.fromTo(headline, 1, {x: "-150%"}, {x: "0%", ease: Power2.easeInOut}, "-=1")
 .fromTo(heroImage, 1, {x: "150%"}, {x: "0%", ease: Power2.easeInOut}, "-=1")
 .fromTo(heroDescription, 1, {x: "-150%"}, {x: "0%", ease: Power2.easeInOut}, "-=1");
 
