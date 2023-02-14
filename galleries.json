@@ -20,16 +20,12 @@
   {
     "name" : "naudisauna",
     "images" : [
-      {
-          "src": "../images/naudisauna/naudi.jpg",
+        {
+          "src": "../images/naudisauna/naudi3.jpg",
           "alt": "naudi sauna"
         },
         {
           "src": "../images/naudisauna/naudi2.jpg",
-          "alt": "naudi sauna"
-        },
-        {
-          "src": "../images/naudisauna/naudi3.jpg",
           "alt": "naudi sauna"
         }
     ]
